@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+/*
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
   border: 2px solid red;
 }
+*/
 
 /* reset user agent margin (from browser) */
 body {
   margin: 0px;
+}
+
+.header {
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /*hero-banner*/
@@ -24,7 +30,7 @@ body {
   font-weight: 800;
   line-height: normal;
   padding: 10px;
-  margin-top: 3px;
+  margin-top: 25px;
   margin-left: 20px;
 }
 
@@ -34,7 +40,7 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  margin-top: -50px;
+  margin-top: -20px;
   padding: 10px 16px;
 }
 
@@ -93,6 +99,20 @@ body {
 
 /*navbar*/
 
+.navbar {
+  padding: 0px;
+}
+
+.navbar-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -119,6 +139,10 @@ nav ul li a:hover {
   color: #012B9D;
 }
 
+nav ul li #navbar-toggle:hover {
+  color: #6495ed
+}
+
 nav ul li #learn {
   background: #012B9D;
   color: #ffffff;
@@ -133,14 +157,26 @@ nav ul li #learn:hover {
 
 
 .container {
+  font-family: "Plus Jakarta Sans", sans-serif;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px 0px 12px 13px;
+  justify-content: center;
   background-color: #fff;
-  margin-bottom: -4px;
   box-shadow: 0 8px 8px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo img{
+  margin-left: 2em;
+  width: 100px;
+  height: auto;
+}
+
+.nav-item {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
 }
 
 /*about-us*/
@@ -298,6 +334,7 @@ nav ul li #learn:hover {
   display: flex;
   gap: 10px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .divisions {
