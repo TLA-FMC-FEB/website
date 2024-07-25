@@ -180,7 +180,7 @@ nav ul li #learn:hover {
 /*about-us*/
 .about-us {
   font-family: Plus Jakarta Sans;
-  display: grid;
+  display: flex;
   grid-template-columns: 1.3fr 0.7fr;
   flex-wrap: wrap;
   gap: 10px;
