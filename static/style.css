@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-/*
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
   border: 2px solid red;
 }
-*/
 
 /* reset user agent margin (from browser) */
 body {
@@ -229,7 +227,7 @@ nav ul li #learn:hover {
   height: 47px;
   border-radius: 6px;
   border: none;
-  background: #85b4ff;
+  background: #0d00c7;
   color: #ffffff;
   font-family: Plus Jakarta Sans;
   font-size: 13px;
@@ -245,7 +243,7 @@ nav ul li #learn:hover {
 }
 
 .about-us button:hover {
-  background: #0d00c7;
+  background: #080075;
   stroke: #ffffff;
 }
 
@@ -273,43 +271,6 @@ nav ul li #learn:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* 
-.content-pengurus {
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  align-items: center;
-  text-align: justify;
-  margin-top: -60px;
-}
-
-
-.pengurus-image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  justify-content: center;
-  justify-self: left;
-}
-
-.pengurus-info {
-  font-size: 18px;
-  margin-bottom: 20px;
-  text-align: justify;
-  margin: 30px 50px 0px 50px;
-
-}
-
-.pengurus-text {
-  flex: 2;
-}
-
-.pengurus-text p {
-  font-size: 15px;
-  margin-bottom: 20px;
-  text-align: justify;
-  margin-top: -60px;
-}*/
 
 .content-pengurus{
   display: flex;
