@@ -275,7 +275,7 @@ nav ul li #learn:hover {
 .content-pengurus{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .pengurus-image{
