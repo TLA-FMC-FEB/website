@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+/*
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
   border: 2px solid red;
 }
+*/
 
 /* reset user agent margin (from browser) */
 body {
@@ -47,7 +49,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: -40px;
+  margin-top: 0px;
   padding: 2%;
 }
 
@@ -96,6 +98,12 @@ body {
 }
 
 /*navbar*/
+/* bg navbar */
+
+.bg-body-tertiary {
+  background-color: rgb(255 255 255) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .navbar {
   padding: 0px;
@@ -177,10 +185,10 @@ nav ul li #learn:hover {
   font-weight: 700;
 }
 
-/*about-us*/
+/*about-us
 .about-us {
   font-family: Plus Jakarta Sans;
-  display: flex;
+  display: grid;
   grid-template-columns: 1.3fr 0.7fr;
   flex-wrap: wrap;
   gap: 10px;
@@ -189,7 +197,7 @@ nav ul li #learn:hover {
   padding: 10px;
   text-align: justify;
   margin-top: -10px;
-}
+}*/
 
 .about-us h2 {
   font-size: 35px;
@@ -214,12 +222,6 @@ nav ul li #learn:hover {
   line-height: 35px;
 }
 
-.aboutImage img {
-  max-width: 90%;
-  margin-top: 18%;
-  margin-left: 12%;
-}
-
 .about-us button {
   /*button*/
   margin: 0 auto;
@@ -227,7 +229,7 @@ nav ul li #learn:hover {
   height: 47px;
   border-radius: 6px;
   border: none;
-  background: #0d00c7;
+  background: #85b4ff;
   color: #ffffff;
   font-family: Plus Jakarta Sans;
   font-size: 13px;
@@ -243,7 +245,7 @@ nav ul li #learn:hover {
 }
 
 .about-us button:hover {
-  background: #080075;
+  background: #0d00c7;
   stroke: #ffffff;
 }
 
@@ -270,12 +272,50 @@ nav ul li #learn:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
 }
+/* 
+.content-pengurus {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  margin-top: -60px;
+}
+
+
+.pengurus-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  justify-content: center;
+  justify-self: left;
+}
+
+.pengurus-info {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin: 30px 50px 0px 50px;
+
+}
+
+.pengurus-text {
+  flex: 2;
+}
+
+.pengurus-text p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-top: -60px;
+}*/
 
 .content-pengurus{
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .pengurus-image{
@@ -327,27 +367,30 @@ footer img {
 }
 
 .containerFooter {
-  display: grid;
+  display: flex;
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5 fr;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-family: Plus Jakarta Sans;
   font-size: 18px;
   font-style: normal;
   padding: 10px;
+  
 }
 
 footer {
   display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
   padding: 16px;
   text-align: justify;
   justify-content: space-between;
-  gap: 80px;
-  flex: auto;
+  gap: 20px;
+  flex: 1 1;
   margin-top: 10%;
+  
 }
 
 footer ul {
@@ -379,3 +422,58 @@ footer ul {
     gap: 10px;
     justify-content: space-between;
   } */
+
+
+/* untuk perangkat dengan lebar layar 600px atau kurang (ponsel) */
+@media (max-width: 600px) {
+  .about-us {
+    font-family: Plus Jakarta Sans;
+    align-items: center;
+    padding: 10px;
+    text-align: justify;
+    margin-top: -10px;
+
+  .aboutImage img{
+    width: 80%;
+    height: auto;
+    margin: 18%;
+    margin-left: 12%;
+  }
+      
+    
+  }
+}
+
+/*antara 601px dan 1024px (tablet) 
+@media (min-width: 601px) and (max-width: 1024px) {
+  .aboutImage img,
+  .pengurus-image img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* lebih dari 1024px (laptop/desktop) */
+@media (min-width: 1025px) {
+  .about-us {
+    font-family: Plus Jakarta Sans;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: justify;
+    margin-top: -10px;
+    
+  .aboutImage img,
+  .pengurus-image img {
+      width: 80%;
+      height: auto;
+      margin: 18%;
+      margin-left: 12%;
+    
+  }
+
